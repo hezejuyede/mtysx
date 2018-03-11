@@ -1,0 +1,167 @@
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+.productAll{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.rightMove3{
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 80px;
+  left: 187px;
+  transition: all 1.5s;
+}
+
+
+.productAll-div{
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top:80px;
+  left:0;
+  transition: all 1.5s;
+
+}
+
+#productAll-div>div{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.productAll-div>div{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+.productAll-div-top{
+  height: 50px;
+  line-height: 50px;
+}
+
+.productAll-div-top-left{
+  float: left;
+  font-size: 20px;
+  width: 100px;
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #92baff;
+  color: #ffffff;
+  border-radius: 10%;
+}
+.productAll-div-top-right{
+  float: right;
+  font-size: 20px;
+  width: 100px;
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #92baff;
+  color: #ffffff;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.searchProduct{
+  width: 95%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.searchProduct-left{
+  width: 35%;
+
+
+}
+.searchProduct-left select{
+  width: 100%;
+  height: 30px;
+  margin: 35px auto;
+  background-color: #ffffff;
+}
+
+
+.searchProduct-right{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchProduct-right input{
+  width: 75%;
+  height: 30px;
+  margin: 35px auto;
+  border: 1px solid#f0f0f0;
+}
+
+.searchProduct-right button{
+  width: 20%;
+  height: 30px;
+  margin: 35px auto;
+  background-color: #3EC455;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 10%;
+}
+#productAll-div a {
+  display: block;
+  width: 250px;
+  float: left;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  margin: 10px;
+  background-color: #ffffff;
+
+}
+#productAll-div a span {
+  display: block;
+  color: #3EC455;
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media screen and (max-width:600px ){
+  .serchProduct-right input{
+    width: 60%;
+    height: 30px;
+    margin: 35px auto;
+    border: 1px solid#f0f0f0;
+  }
+
+  .serchProduct-right button{
+    width: 40px;
+    height: 30px;
+    margin: 35px auto;
+    background-color: #3EC455;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10%;
+  }
+
+}

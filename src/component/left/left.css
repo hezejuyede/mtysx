@@ -1,0 +1,193 @@
+.top{
+  height: 20px;
+  background-color: #3ec455;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 999;
+}
+
+.left>div{
+  height: 500px;
+}
+
+.left-hide{
+  width: 187px;
+  position: relative;
+  left: -187px;
+  transition: all 1.5s;
+  z-index: 99;
+}
+.left-show{
+  width: 187px;
+  position: relative;
+  left: 0;
+  transition: all 1.5s;
+  z-index: 99;
+}
+
+
+
+
+.left-template-top{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(32,45,51,1);
+  color: #f0f0f0;
+  font-size: 16px;
+  position: relative;
+}
+
+.left-template-top span{
+  margin-left: 20px;
+
+}
+.left-template-top-active{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #6495ed;
+  color: #f0f0f0;
+  font-size: 16px;
+  position: relative;
+}
+
+
+
+#left a{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  background-color: rgba(42,59,66,1);
+
+}
+
+
+.left-template-bottom{
+  display: block;
+}
+
+.left-template-bottom-hide{
+  display: none;
+}
+
+
+
+.left-template-top .icon-dingdan1{
+
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f4a460;
+  color: #f0f0f0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+}
+
+.left-template-top .icon-shangpin-{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ff1493;
+  color: #f0f0f0;;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+
+}
+.left-template-top .icon-drxx10{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffcd32;
+  color: #f0f0f0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+
+}
+.left-template-top .icon-diannao{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #f0f0f0;;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+  background-color: darkturquoise;
+
+}
+.left-template-top .icon-shouji{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #6495ed;
+  color: #f0f0f0;;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+
+}
+
+.left-template-top .icon-weixin1 {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #3ec455;
+  color: #f0f0f0;;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  top: 7.5px;
+  left: 20px;
+
+}
+
+
+
+
+
+.left-template-top .icon-right-trangle{
+  float: right;
+  color: #f0f0f0;
+  display: none;
+  font-size: 16px;
+  margin-right: 10px;
+
+
+}
+
+.left-template-top .icon-down-trangle1{
+  float: right;
+  color: #f0f0f0;
+  margin-right: 10px;
+  font-size: 16px;
+
+}

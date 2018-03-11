@@ -1,0 +1,172 @@
+.indexLogin{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0,210,255,1), rgba(0,101,160,1));
+}
+.indexLogin-logo img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 70px;
+    transform:scale(1.5);
+
+}
+.indexLogin-title{
+    text-align: center;
+    margin: 50px auto 50px auto;
+    color: #ffffff;
+}
+.Login-w{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    background: radial-gradient(rgba(208,248,254,1), rgba(0,129,186,1));
+    position: relative;
+    border-radius: 5%;
+}
+
+.Login-n{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    top:25px;
+    left: 25px;
+    background: rgba(0,79,126,0.6);
+    border-radius: 5%;
+}
+
+label{
+    width: 74%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 25px 10px ;
+    padding-left: 20px;
+    position: relative;
+}
+label input{
+    width: 80%;
+    padding-left: 15%;
+    height: 30px;
+    background-color: rgba(203,244,251,1);
+
+}
+label .help-block{
+    height: 30px;
+    width:16% ;
+    margin-left: 1%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d93f30;
+
+}
+
+.Login-n button{
+    width: 80px;
+    height: 80px;
+    top:35px;
+    background: radial-gradient(rgba(0,210,255,1), rgba(0,101,160,1));
+    position: absolute;
+    border-radius: 10%;
+    right: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    outline:none;
+}
+
+.Login-n .icon-iconfonticonfontwode1,.Login-n .icon-mima{
+    color: rgba(0,180,223,1);
+    font-size: 18px;
+    position: absolute;
+    top:10px;
+    left: 10%;
+
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width: 500px){
+    .Login-w{
+        width: 95%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .Login-n{
+        position: absolute;
+        width: 95%;
+        height: 120px;
+        top:15px;
+        left: 2.5%;
+        background: rgba(0,79,126,0.8);
+        border-radius: 5%;
+    }
+    label{
+        width: 70%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 10px ;
+        padding-left: 20px;
+        position: relative;
+    }
+    label input{
+        width: 90%;
+        padding-left: 15%;
+        height: 30px;
+        background-color: rgba(203,244,251,1);
+
+    }
+    label .help-block{
+        height: 60px;
+        width:20% ;
+        margin-left: 1%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Login-n button{
+        width: 60px;
+        height: 60px;
+        top:35px;
+        background: radial-gradient(rgba(0,210,255,1), rgba(0,101,160,1));
+        position: absolute;
+        border-radius: 10%;
+        right: 15px;
+        font-size: 20px;
+        color: #ffffff;
+        border: none;
+        outline:none;
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 320px){
+    .indexLogin{
+        width: 320px;
+    }
+
+
+
+
+
+
+
+}

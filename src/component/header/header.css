@@ -1,0 +1,212 @@
+.header{
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+
+}
+.MLogOut{
+  position: absolute;
+  bottom: 5px;
+  color: #d93f30;
+  display: none;
+
+
+}
+.header-left{
+  width: 187px;
+  float: left;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(32,45,51,1);
+
+}
+
+.header-center{
+  width:200px;
+  height: 80px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.header-right{
+  width: 100px;
+  float: right;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+
+}
+
+.userInfo-avatar{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInfo-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.userInfo-name{
+  flex: 1;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  color: #3ec455;
+}
+
+.userInfo-name p:first-child{
+  color: cornflowerblue;
+}
+.userInfo-name p:last-child{
+  color: #d93f30;
+  font-size: 12px;
+}
+
+
+
+.header-center .openCloseLeft{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-center .home{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-center .register{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-center .login{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-center .set{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.header-center .message{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.header-center .icon-zhuye1{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(26, 136, 236, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.header-center .icon-lingdang{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 14, 236, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.header-center .icon-shezhi{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(1, 156, 50, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.header-center .icon-icon-copy
+{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(131, 97, 826, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+
+.header-center .icon-liebiao,.header-center .icon-liebiao-copy{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(247, 186, 34, 1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 20px;
+
+}
+
+
+
+@media screen and (max-width: 570px) {
+  .header-right{
+    width: 80px;
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 482px) {
+  .header-right{
+    display: none;
+  }
+  .header-center{
+    width: 45%;
+
+  }
+  .MLogOut{
+    display: block;
+
+  }
+
+
+}

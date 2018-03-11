@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+}
+html{
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "SimSun", Arial, sans-serif;
+  color: #000;
+  background-color: #f0f0f0;
+  overflow-x:hidden
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+ul {
+  list-style: none;
+
+}
+
+input, textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+#App{
+  height: 100%;
+  width: 100%;
+  overflow-x:hidden
+}
+@media screen and (max-width: 370px){
+  #App{
+    width: 370px;
+  }
+}
+

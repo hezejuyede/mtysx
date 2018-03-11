@@ -1,0 +1,76 @@
+.pagination {
+    width: 370px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.pagination .icon-left-trangle, .pagination .icon-right-trangle {
+    font-size: 18px;
+    color: #0094e5;
+}
+
+.pagination .icon-prev-arrow, .pagination .icon-next-arrow {
+    font-size: 18px;
+    color: #0094e5;
+}
+
+
+.pagination-first,.pagination-prev,.pagination-next,.pagination-last{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid#f0f0f0;
+    color: #0094e5;
+
+}
+.paginationPage{
+    display: flex;
+}
+.pagination-div{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid#f0f0f0;
+    color: #0094e5;
+    font-size: 18px;
+}
+
+.pageDiv1{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid#f0f0f0;
+    color: #0094e5;
+    font-size: 18px;
+}
+
+.pageDiv2{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid#f0f0f0;
+    color: #0094e5;
+    font-size: 18px;
+}
+
+.pageActive{
+    background-color: #3ec455;
+    color: #ffffff;
+}
+.hidePage{
+    display: none;
+}

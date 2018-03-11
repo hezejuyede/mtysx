@@ -1,0 +1,166 @@
+.setUp{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.rightMove{
+  width: 100%;
+  position: absolute;
+  top:80px;
+  left:187px;
+  transition: all 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ysx-setUp {
+  width: 100%;
+  position: absolute;
+  top:80px;
+  left:0;
+  transition: all 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ysx-setUp-big{
+  height: 400px;
+  width: 500px;
+  margin-top: 50px;
+  border-radius: 5%;
+  background-color: #ffffff;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.ysx-setUp-div {
+  height: 150px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-input {
+  width: 95%;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.div-input-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.div-input-left .icon-iconfonticonfontwode1 {
+  font-size: 18px;
+  color: #3EC455;
+}
+
+.div-input-center {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.div-input-left .icon-shouji1 {
+  font-size: 18px;
+  color: #3EC455;
+}
+
+.div-input-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-input-left .icon-mima {
+  font-size: 18px;
+  color: #3EC455;
+}
+
+.changePassword {
+  height: 200px;
+  width: 95%;
+  margin: 10px auto;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.changePassword h2 {
+  margin: 5px;
+  color: darkturquoise;
+}
+
+.changePassword-div {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.changePassword button {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3EC455;
+  color: #ffffff;
+
+}
+
+@media screen and (min-width: 800px) {
+  .ysx-setUp-div {
+    width: 400px;
+
+  }
+
+  .ysx-setUp-div button {
+    width: 400px;
+  }
+
+  .changePassword {
+    width: 400px;
+  }
+
+  .changePassword button {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .ysx-setUp-big{
+    width: 90%;
+  }
+
+}
