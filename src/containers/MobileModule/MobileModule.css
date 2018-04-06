@@ -1,0 +1,81 @@
+.MobileModule {
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+#ysx-MobileModule>div{
+    width: 100%;
+    height: 100%;
+}
+
+.rightMoveMobile {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 187px;
+    transition: all 1.5s;
+    padding-top: 10px;
+}
+
+.ysx-Mobile {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transition: all 1.5s;
+    padding-top: 10px;
+}
+
+
+.MobileModule-div{
+    width: 95%;
+    margin: 0 auto;
+
+}
+.MobileModule-div div{
+    float: left;
+    width: 16%;
+    height: 80px;
+    margin-left:3%;
+    margin-top: 30px;
+    border-radius: 20%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0094e5;
+    cursor: pointer;
+}
+
+.MobileModule-div div .icon-jingxuan,
+.MobileModule-div div .icon-lunbotu,
+.MobileModule-div div .icon-toutiao,
+.MobileModule-div div .icon-tuijian,
+.MobileModule-div div .icon-miaosha,
+.MobileModule-div div .icon-xinpin,
+.MobileModule-div div .icon-remai1,
+.MobileModule-div div .icon-leimupinleifenleileibie,
+.MobileModule-div div .icon-fujin,
+.MobileModule-div div .icon-sousuo,
+.MobileModule-div div .icon-xinpinbiaoqian,
+.MobileModule-div div .icon-remai,
+.MobileModule-div div .icon-chuangxinjingxuan,
+.MobileModule-div div .icon-dazhehuodong,
+.MobileModule-div div .icon-miaosha1,
+.MobileModule-div div .icon-shitang-,
+.MobileModule-div div .icon-tesefuwu,
+.MobileModule-div div .icon-lihe{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    font-size: 25px;
+    background-color: #3ec455;
+    color: #ffffff;
+
+}

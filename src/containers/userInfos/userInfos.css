@@ -20,41 +20,42 @@
 
 
 
-
-
 .ysx-userInfos-top{
   width: 95%;
   margin: 10px auto;
   font-size: 20px;
   color: #d93f30;
+  padding-left: 5%;
 }
 .ysx-userInfos-bottom{
   width: 95%;
-  height: 400px;
   margin: 0 auto;
-  background-color: #ffffff;
   padding-top: 10px;
 
 }
 .user-template{
-  height: 30px;
+  height: 80px;
   border: 1px solid #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 5px;
 
 }
 
 .bottom-top {
   width: 95%;
   display: flex;
-  height: 30px;
+  height: 60px;
   line-height: 30px;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+ background-color: #3ec455;
+  color: #ffffff;
   font-size: 18px;
   margin: 0 auto;
+
 }
 
 .bottom-center{
@@ -99,6 +100,65 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+
+
+.list-user-id {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-user-id-avatar img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+.list-user-id-name{
+  margin-left: 5%;
+}
+
+
+.list-user-time{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-user-email{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-user-phone{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
 
 
 .bottom-bottom{

@@ -7,16 +7,21 @@ import Footer from '../../component/footer/footer'
 import Left from '../../component/left/left'
 import NoLogin from '../../component/Nologin/Nologin'
 import { connect } from 'react-redux'
+import Pagination from '../../component/pagination/pagination'
 
 
 class userInfos extends Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+        this.getPage= this.getPage.bind(this);
         this.state = {
             admUserList: [],
             userinfoState: false,
-            leftState: this.props.iconState.iconState.iconState
+            leftState: this.props.iconState.iconState.iconState,
+            pageNumber:2,
+            allNumber:"",
+            page:0,
         }
     }
 
@@ -35,46 +40,35 @@ class userInfos extends Component {
                         </div>
                         <div className="ysx-userInfos-bottom">
                             <div className="bottom-top">
-                                <p className="user-id">ID</p>
                                 <p className="user-name">用户名</p>
                                 <p className="user-email">邮箱</p>
                                 <p className="user-phone">电话</p>
+                                <p className="user-name">注册时间</p>
                             </div>
                             <div className="bottom-center">
                                 {admUserList.map((item, index) => {
                                     return <div key={index} className="user-template">
-                                        <p className="user-id">{item._id}</p>
-                                        <p className="user-name">{item.username}</p>
-                                        <p className="user-email">{item.email}</p>
-                                        <p className="user-phone">{item.phone}</p>
+                                        <div className="list-user-id">
+                                            <div className="list-user-id-avatar">
+                                                <img src={item.avatar} alt=""/>
+
+                                            </div>
+                                            <div className="list-user-id-name">
+                                                {item.username}
+                                            </div>
+                                        </div>
+                                        <div className="list-user-email">{item.email}</div>
+                                        <div className="list-user-phone">{item.phone}</div>
+                                        <div className="list-user-time">{item.time}</div>
                                     </div>
                                 })}
 
 
                             </div>
-                            <div className="bottom-bottom">
-                                <div className="">
-                                    <i className="iconfont icon-left-trangle"></i>
-                                </div>
-                                <div className="blue">
-                                    1
-                                </div>
-                                <div className="">
-                                    2
-                                </div>
-                                <div className="">
-                                    3
-                                </div>
-                                <div className="">
-                                    ...
-                                </div>
-                                <div className="">
-                                    199
-                                </div>
-                                <div className="">
-                                    <i className="iconfont icon-right-trangle"></i>
-                                </div>
-                            </div>
+                            <Pagination
+                                getPage={this.getPage}
+                                pageNumber={this.state.pageNumber}
+                                allNumber={this.state.allNumber}/>
                         </div>
                     </div>
                     <Footer/>
@@ -103,10 +97,15 @@ class userInfos extends Component {
             })
         }
         else if (NowUserStates === "1") {
-            axios.get("/admUserList")
+            axios.get("/admUserList",{
+                params: {
+                    page: 0
+                }
+            })
                 .then((res) => {
                     this.setState({
-                        admUserList: res.data,
+                        admUserList: res.data.result,
+                        allNumber:res.data.length,
                         userinfoState: true
                     })
                 })
@@ -114,6 +113,24 @@ class userInfos extends Component {
                     console.log(err)
                 })
         }
+
+    };
+
+    getPage = nowPage => {
+        axios.get("/admUserList", {
+            params: {
+                page: nowPage
+            }
+        })
+            .then((res) => {
+                this.setState({
+                    admUserList: res.data.result
+                });
+
+            })
+            .catch((err) => {
+                console.log(err)
+            })
 
     };
 }

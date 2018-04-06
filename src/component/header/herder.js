@@ -4,8 +4,8 @@ import img from '../../common/imgs/logo.png'
 import './header.css'
 import '../../common/icon/iconfont.css'
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
 import * as actions from '../../redux/actions/actions'
 
 
@@ -18,7 +18,7 @@ class header extends Component {
             userName: Object,
             userAvatar: Object,
             icon: true,
-            changeLeft:Object
+            changeLeft: Object
 
         }
     }
@@ -26,7 +26,7 @@ class header extends Component {
     render() {
         const userName = this.state.userName;
         const userAvatar = this.state.userAvatar;
-        const close= "iconfont icon-liebiao";
+        const close = "iconfont icon-liebiao";
         const open = "iconfont icon-liebiao-copy";
         return (
             <div className="header">
@@ -67,7 +67,7 @@ class header extends Component {
                         <img src={userAvatar} alt=""/>
                     </div>
                     <div className="userInfo-name">
-                        <p >{userName}</p>
+                        <p>{userName}</p>
                         <p onClick={this.UserOut.bind(this)}>退出</p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ class header extends Component {
                 icon: false
             });
             this.props.changeLeft.leftMove({
-                iconState:true
+                iconState: true
 
             });
         }
@@ -105,7 +105,7 @@ class header extends Component {
                 icon: true
             });
             this.props.changeLeft.rightMove({
-                iconState:false
+                iconState: false
 
             });
         }
@@ -129,6 +129,7 @@ function mapDispatchToProps(dispatch) {
         changeLeft: bindActionCreators(actions, dispatch),
     }
 }
+
 export default connect(
     mapStateToProps,
     mapDispatchToProps

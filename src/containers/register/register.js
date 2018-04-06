@@ -141,7 +141,7 @@ class register extends Component {
     _getRegister() {
         let NowUserStates = localStorage.getItem("UserStates");
         NowUserStates = JSON.parse(NowUserStates);
-        if (NowUserStates == null) {
+        if (NowUserStates === null) {
             this.setState({
                 userinfoState: false,
             })
@@ -182,7 +182,7 @@ class register extends Component {
     UserNameOnBlur(e) {
 
         let value = e.target.value;
-        if (value.length === "0") {
+        if (value.length === 0) {
             this.setState({
                 UserNameErrInfo: true,
                 UserNameErrText: "用户名不能为空 ",
@@ -231,7 +231,7 @@ class register extends Component {
     PassWorld1OnBlur(e) {
 
         let value = e.target.value;
-        if (value.length === "0") {
+        if (value.length === 0) {
             this.setState({
                 PassWorld1ErrInfo: true,
                 PassWorld1ErrText: "密码不能为空",
@@ -278,7 +278,7 @@ class register extends Component {
     PassWorld2OnBlur(e) {
         let passWord = document.querySelector("#passWord").value;
         let value = e.target.value;
-        if (value.length === "0") {
+        if (value.length === 0) {
             this.setState({
                 PassWorld2ErrInfo: true,
                 PassWorld2ErrText: "密码不能为空",
@@ -319,14 +319,14 @@ class register extends Component {
 
     PhoneNumberOnBlur(e) {
         let value = e.target.value;
-        if (value.length === "0") {
+        if (value.length === 0) {
             this.setState({
                 PhoneNumberErrInfo: true,
                 PhoneNumberErrText: "手机号不能为空",
                 errIcon: true,
             })
         }
-        else if (value.length !== "11") {
+        else if (value.length !== 11) {
             this.setState({
                 PhoneNumberErrInfo: false,
                 PhoneNumberErrText: "手机号格式不正确 ",
@@ -499,7 +499,7 @@ class register extends Component {
                             ModalMessage: "",
                             showHideModal: false
                         });
-                        window.location ="/"
+                        that.props.history.push('/');
 
                     }
 

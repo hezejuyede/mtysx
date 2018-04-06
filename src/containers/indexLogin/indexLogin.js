@@ -17,8 +17,8 @@ class indexLogin extends Component {
             userPassword: "",
             unameHelp: "",
             upwdHelp: "",
-            ModalMessage:"",
-            showHideModal:false,
+            ModalMessage: "",
+            showHideModal: false,
             LoginClick: true
         }
     }
@@ -28,7 +28,7 @@ class indexLogin extends Component {
             <div className="indexLogin">
                 <Modal
                     ModalMessage={this.state.ModalMessage}
-                    showHideModal={this.state.showHideModal} />
+                    showHideModal={this.state.showHideModal}/>
                 <header className="indexLogin-logo">
                     <img src={img} alt=""/>
                 </header>
@@ -102,7 +102,7 @@ class indexLogin extends Component {
 
     admLogin(e) {
         this.setState({
-            LoginClick:false
+            LoginClick: false
         });
         if (this.state.userName === "" || this.state.userName === null) {
             this.setState({
@@ -143,14 +143,15 @@ class indexLogin extends Component {
                             ModalMessage: "",
                             showHideModal: false
                         });
-                        window.location = "/home"
+                        that.props.history.push('/home');
                     }
 
 
                     setTimeout(a, 2000);
 
 
-                } else if (res.data === "-1") {
+                }
+                else if (res.data === "-1") {
                     this.setState({
                         ModalMessage: "密码错误",
                         showHideModal: true,
@@ -169,7 +170,8 @@ class indexLogin extends Component {
 
                     setTimeout(b, 2000);
 
-                } else if (res.data === "2") {
+                }
+                else if (res.data === "2") {
                     this.setState({
                         ModalMessage: "用户不存在",
                         showHideModal: true
@@ -195,9 +197,6 @@ class indexLogin extends Component {
         }
 
     }
-
-
-
 
 
 }

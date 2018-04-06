@@ -163,10 +163,12 @@ class productBJ extends Component {
             if (l <= 4) {
                 id = str.slice(1);
                 index = str.slice(0, 1);
-            } else if (l === 5) {
+            }
+            else if (l === 5) {
                 index = str.slice(0, 2);
                 id = str.slice(2);
-            } else if (l === 6) {
+            }
+            else if (l === 6) {
                 index = str.slice(0, 3);
                 id = str.slice(3);
             }
@@ -187,7 +189,6 @@ class productBJ extends Component {
                 .catch((err) => {
                     console.log(err)
                 })
-
         }
 
     };

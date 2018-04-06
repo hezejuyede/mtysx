@@ -73,14 +73,15 @@ class left extends Component {
                             </div>
                         </div>
                         <div className="left-template">
-                            <div className="left-template-top" onClick={this.showDownList.bind(this)}>
+                            <div className="left-template-top"
+                                 onClick={this.showDownList.bind(this)}>
                                 <i className="iconfont icon-shouji"></i>
                                 <span>移动模块</span>
                                 <i className="iconfont icon-right-trangle three1"></i>
                                 <i className="iconfont icon-down-trangle1 three2"></i>
                             </div>
                             <div className="left-template-bottom bsh">
-                                <NavLink to="/userInfos">
+                                <NavLink to="/MobileModule">
                                     页面信息
                                 </NavLink>
 

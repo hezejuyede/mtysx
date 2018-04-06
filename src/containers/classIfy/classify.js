@@ -32,9 +32,6 @@ class classify extends Component {
                                 <div className="classify-title-left">
                                     商品品类
                                 </div>
-                                <div className="classify-title-right">
-                                    添加品类
-                                </div>
                             </div>
                             <div className="classify-top">
                                 <div className="classify-top-ID">ID</div>
@@ -85,7 +82,6 @@ class classify extends Component {
 
             axios.get("/admProductClassify")
                 .then((res) => {
-                console.log(res.data);
                     this.setState({
                         data: res.data,
                         userinfoState: true
