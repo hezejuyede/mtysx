@@ -43,11 +43,15 @@ import JXLH from '../containers/MobileModule/child/JXLH'
 import BZRM from '../containers/MobileModule/child/BZRM'
 import SYLB from '../containers/MobileModule/child/SYLB'
 
+import Find from '../containers/CustomerC/Find/Find'
+import LTCK from '../containers/CustomerC/LTCK/LTCK'
+import My from '../containers/CustomerC/My/My'
+import TXL from '../containers/CustomerC/TXL/TXL'
 
 
 
 
-
+import CustomerCommunication from '../containers/CustomerC/CustomerC'
 
 class Routers extends Component {
     render() {
@@ -66,8 +70,12 @@ class Routers extends Component {
                     </Route>
                     <Route path="/userInfos" component={UserInfos}>
                     </Route>
+                    <Route path="/CustomerCommunication" component={CustomerCommunication}>
+                    </Route>
                     <Route path="/order" component={Order}>
                     </Route>
+
+
 
                     <Route path="/SYLB" component={SYLB}>
                     </Route>
@@ -109,14 +117,14 @@ class Routers extends Component {
 
 
 
-
-
-
-
-
-
-
-
+                    <Route path="/Find" component={Find}>
+                    </Route>
+                    <Route path="/LTCK/:id" component={LTCK}>
+                    </Route>
+                    <Route path="/My" component={My}>
+                    </Route>
+                    <Route path="/TXL" component={TXL}>
+                    </Route>
 
 
                     <Route path="/orderDetails/:id" component={orderDetails}>
@@ -135,8 +143,7 @@ class Routers extends Component {
                     </Route>
                     <Route path="/productDetails/:id" component={productDetails}>
                     </Route>
-
-
+                    <Redirect from="/" to="/indexLogin"></Redirect>
                 </Switch>
             </Router>
         )

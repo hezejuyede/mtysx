@@ -1,0 +1,183 @@
+.CustomerC {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.CustomerC-avatar{
+    padding-top: 20px;
+    height: 140px;
+    background-color: #f0f0f0;
+}
+.CustomerC-avatar-div{
+
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+
+.CustomerC-avatar-left{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.CustomerC-avatar-left img{
+    height: 90px;
+    width: 90px;
+
+}
+
+.CustomerC-avatar-center{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.CustomerC-avatar-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.CustomerC-avatar-right .icon-erweima{
+    font-size: 26px;
+
+}
+
+
+
+
+.CustomerC-div-center{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+
+}
+
+.CustomerC-div-center-top{
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.LTTemplate{
+    height: 60px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    background-color: #ffffff;
+
+}
+.LTTemplate-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.LTTemplate-left .icon-favorite {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    background-color: #92baff;
+    color: #ffffff;
+    border-radius: 10%;
+
+}
+
+
+
+.LTTemplate-left .icon-qianbao{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    background-color: #3ec455;
+    color: #ffffff;
+    border-radius: 10%;
+
+}
+
+.LTTemplate-left .icon-xiangce1{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    background-color: #0094e5;
+    color: #ffffff;
+    border-radius: 10%;
+
+}
+.LTTemplate-left .icon-biaoqing{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    background-color: #ffcd32;
+    color: #ffffff;
+    border-radius: 10%;
+
+}
+.LTTemplate-left .icon-shezhi{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    background-color: #ff1493;
+    color: #ffffff;
+    border-radius: 10%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.LTTemplate-right1{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.LTTemplate-left1 img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.LTTemplate-right1 span{
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+    margin-bottom: 5px;
+}
+

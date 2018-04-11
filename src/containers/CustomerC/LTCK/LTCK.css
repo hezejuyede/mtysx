@@ -1,0 +1,282 @@
+.CustomerC {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.CustomerC-div-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    background-color: #666666;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+.CustomerC-div-top span{
+    margin-left: 5%;
+    font-size: 22px;
+}
+.CustomerC-div-top .icon-left-trangle{
+    margin-left: 4%;
+    font-size: 22px;
+}
+.CustomerC-div-top .icon-fangdajing{
+    float: right;
+    margin-right: 8%;
+    font-size: 22px;
+}
+
+.CustomerC-div-top .icon-jiahaocu{
+    float: right;
+    margin-right: 4%;
+    font-size: 22px;
+}
+.green{
+    color: #3ec455;
+}
+
+
+.CustomerC-div-center1{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 65%;
+    overflow-y: scroll;
+
+
+}
+.LxKf-FJ{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    z-index: 98;
+}
+
+
+
+
+
+
+.LxKf-bottom{
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    z-index: 99;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+}
+.LxKf-bottom-left1 {
+    flex: 2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LxKf-bottom .icon-yuyin {
+    font-size: 30px;
+}
+.LxKf-bottom .icon-jianpan {
+    font-size: 30px;
+}
+
+
+
+.LxKf-bottom-left2 {
+    flex: 6;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    border-bottom: 1px solid #3ec455;
+    font-size: 16px;
+
+
+}
+.LxKf-bottom-left2 p:last-child {
+    width: 80%;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5%;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.HideBottom {
+    display: none;
+}
+
+
+.LxKf-bottom-right1{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LxKf-bottom-right1 .icon-smiling{
+    font-size: 30px;
+}
+
+
+.LxKf-bottom-right2{
+    flex: 2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emitMessage{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3ec455;
+    color: #ffffff;
+    font-size: 16px;
+}
+.LxKf-bottom-right2 p{
+
+}
+
+.LxKf-bottom-right2 .icon-jiahao{
+    font-size: 30px;
+}
+
+
+.WXFj {
+    width: 100%;
+    height: 100%;
+}
+.WXFj div{
+    float: left;
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+
+.WXFj div .icon-xiangce1{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+
+.WXFj div .icon-xiangji{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+
+}
+.WXFj div .icon-fujin1{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+
+}
+.WXFj div .icon-icon-test{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+.WXFj div .icon-ai01{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+.WXFj div .icon-solid-person{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+.WXFj div .icon-favorite{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+.WXFj div .icon-shipin{
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 15%;
+    font-size: 26px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
+.LTTemplate1{
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.wxFace .LTTemplate img{
+    width: 24px;
+    height: 24px;
+
+
+}

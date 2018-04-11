@@ -57,6 +57,9 @@ class left extends Component {
                                 <NavLink to="/userInfos">
                                     用户列表
                                 </NavLink>
+                                <NavLink to="/CustomerCommunication">
+                                    用户通讯
+                                </NavLink>
                             </div>
                         </div>
                         <div className="left-template">
@@ -132,7 +135,7 @@ class left extends Component {
             for (let i = 0; i < topList.length; i++) {
                 (function (n) {
                     topList[i].onclick = function () {
-                        bottomList[n].className = "left-template-bottom-hide bsh";
+                        bottomList[n].className = "left-template-XXbottom-hide bsh";
                         right[n].style.display = "block";
                         down[n].style.display = "none";
                     }
@@ -148,7 +151,7 @@ class left extends Component {
             for (let i = 0; i < topList.length; i++) {
                 (function (n) {
                     topList[i].onclick = function () {
-                        bottomList[n].className = "left-template-bottom bsh";
+                        bottomList[n].className = "left-template-XXbottom bsh";
                         right[n].style.display = "none";
                         down[n].style.display = "block";
                     }

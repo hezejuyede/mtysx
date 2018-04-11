@@ -1,0 +1,47 @@
+.CustomerC-div-bottom{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    background-color: #ffffff;
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+
+}
+
+.CustomerC-div-bottom>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+
+.CustomerC-div-bottom .icon-xiaoxi1{
+    font-size: 26px;
+
+
+
+}
+
+.CustomerC-div-bottom .icon-tongxunlu{
+    font-size: 26px;
+
+}
+
+.CustomerC-div-bottom .icon-faxian{
+    font-size: 26px;
+
+}
+
+.CustomerC-div-bottom .icon-solid-person{
+    font-size: 26px;
+
+}

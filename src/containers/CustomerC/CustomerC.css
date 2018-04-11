@@ -1,0 +1,93 @@
+.CustomerC {
+   background-color: #ffffff;
+
+
+}
+
+
+
+.CustomerC-div-center{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+}
+
+.LTTemplate{
+    height: 60px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+
+}
+
+.LTTemplate-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.LTTemplate-right{
+    flex: 4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5px;
+
+}
+
+
+.deleteText{
+    position: absolute;
+    right: 0;
+    width:80px;
+    height: 50px;
+    background-color: #d93f30;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+}
+
+.hideDelete{
+    display: none;
+}
+
+.LTTemplate-left img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.LTTemplate-right span:first-child{
+    font-size: 18px;
+    color: rgba(0,0,0,1);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.LTTemplate-right span:last-child{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
