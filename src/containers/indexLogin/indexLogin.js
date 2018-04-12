@@ -5,7 +5,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import Modal from '../../component/modal/modal'
 import './indexLogin.css';
 import '../../common/icon/iconfont.css';
-
+import io from 'socket.io-client';
+const socket = io('http://localhost:3000');
 
 class indexLogin extends Component {
     constructor(props, context) {
@@ -135,6 +136,9 @@ class indexLogin extends Component {
                     this.setState({
                         ModalMessage: "登录成功",
                         showHideModal: true
+                    });
+                    socket.emit('CustomerService', {
+                        "username":this.state.userName
                     });
                     const that = this;
 

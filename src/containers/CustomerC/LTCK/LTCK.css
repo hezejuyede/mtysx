@@ -39,11 +39,12 @@
 
 
 .CustomerC-div-center1{
-    margin-top: 50px;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 65%;
+    height: 85%;
     overflow-y: scroll;
+    top: 60px;
+    bottom: 50px;;
 
 
 }
@@ -54,6 +55,128 @@
     height: 150px;
     z-index: 98;
 }
+
+
+
+
+.CustomerC .left-template{
+    width: 80%;
+    float: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+}
+.CustomerC .left-template-avatar{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.CustomerC .left-template-avatar img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.CustomerC .left-template-content{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.CustomerC .left-template-content p{
+    padding:10px;
+    border-radius: 10%;
+    background-color: rgba(157,236,118,1);
+}
+
+
+.CustomerC .left-template-time{
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: -12px;
+    background-color: #f0f0f0;
+    color:#ffffff;
+    left: 25%;
+    font-size: 12px;
+}
+
+.CustomerC .right-template{
+    width: 80%;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+.CustomerC .right-template-avatar{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.CustomerC .right-template-avatar img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.CustomerC .right-template-content{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.CustomerC .right-template-content p{
+    padding:10px;
+    border-radius: 10%;
+    background-color: #f0f0f0;
+}
+
+
+
+.CustomerC .right-template-time{
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: -12px;
+    background-color: #f0f0f0;
+    color:#ffffff;
+    left: 25%;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -280,3 +403,18 @@ input{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

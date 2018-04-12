@@ -11,23 +11,23 @@ import {getNowTime} from '../../../api/api'
 
 
 
+const socket = io('http://localhost:3000');
+
+
 class Child extends Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-        this.messageInfo = this.messageInfo.bind(this);
+        this.messageInfo1 = this.messageInfo1.bind(this);
+        this.onMessage= [];
         this.state = {
-            userList: [],
+
             userinfoState: false,
             leftState: this.props.iconState.iconState.iconState,
-            SHDelete:true,
-            ModalMessage:'',
-            showHideConfirm:false,
-            showHideModal:false,
+
             LTUserNmane:'',
             messageInfo:'',
 
-            
             WXBQ: [
                 {"img": 'http://www.ilqiqi.top/images/mYC/arclist/1.gif'},
                 {"img": 'http://www.ilqiqi.top/images/mYC/arclist/2.gif'},
@@ -105,11 +105,6 @@ class Child extends Component {
                 {"img": 'http://www.ilqiqi.top/images/mYC/arclist/74.gif'},
                 {"img": 'http://www.ilqiqi.top/images/mYC/arclist/75.gif'}
             ],
-            onMessage:[],
-
-           
-            username:'',
-            avatar:'',
 
             SHYY:false,
             SHJP:true,
@@ -119,7 +114,18 @@ class Child extends Component {
             SHJH:false,
             BottomFJ:true,
             WXFj:true,
-            WXbq:false
+            WXbq:false,
+
+
+            username:'',
+            avatar:'',
+            login: '',
+
+            onHTMessage:[],
+            CustomerService:'',
+            CustomerServiceAvatar:'',
+            CustomerServiceContent:'',
+
         }
     }
 
@@ -135,8 +141,37 @@ class Child extends Component {
                         <i className="iconfont icon-jiahaocu"></i>
                         <i className="iconfont icon-fangdajing"></i>
                     </div>
-                    <div className="CustomerC-div-center1">
-                        {this.state.onMessage}
+                    <div className="CustomerC-div-center1" onClick={this.HideBottom.bind(this)}>
+                        {this.state.onHTMessage.map((item, index) => {
+                            return <div key={index}>
+                                <div className={item.direction === 'left' ?'left-template':'HideBottom '} >
+
+                                    <div className="left-template-time">{item.time}</div>
+                                    <div className="left-template-content">
+                                        <p className="">
+                                            {item.leftContent}
+                                        </p>
+                                    </div>
+                                    <div className="left-template-avatar">
+                                        <img src={item.leftAvatar} alt=""/>
+                                    </div>
+
+                                </div>
+                                <div className={item.direction==='right' ? "right-template":'HideBottom '}>
+
+                                    <div className="right-template-avatar">
+                                        <img src={item.rightAvatar} alt=""/>
+                                    </div>
+                                    <div className="right-template-time"> {item.time}</div>
+                                    <div className="right-template-content">
+                                        <p className="">
+                                            {item.rightContent}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        })}
+
 
                     </div>
                     <div className="LxKf-bottom" id="LxKf-bottom">
@@ -153,7 +188,7 @@ class Child extends Component {
                             <input
                                 className={this.state.SHSR ? '' : 'HideBottom'}
                                 value={this.state.messageInfo}
-                                onChange={this.messageInfo}
+                                onChange={this.messageInfo1}
                                 id="bottomText"/>
                             <p className={this.state.SHSH ? '' : 'HideBottom'}>
                                 按住&nbsp;说话
@@ -236,19 +271,10 @@ class Child extends Component {
     componentWillMount() {
         this._getMobile();
 
-
     };
     componentDidMount(){
         this.ShowLT();
-        let that = this
-        io('http://localhost:3000')
-            .on('privateMsg',(from, to, msg) => {
-                that.setState({
-                    onMessage:msg
-                })
-
-            });
-
+        this.onHtMessage();
     }
 
     _getMobile() {
@@ -271,18 +297,68 @@ class Child extends Component {
 
         }
     };
+
     ShowLT(index, username) {
         const id = this.props.match.params.id
         this.setState({
             LTUserNmane:id
         })
 
-        io('http://localhost:3000').emit('CustomerService', {
-            username:this.state.username
+        socket.emit('CustomerService', {
+            "username":this.state.username
         });
     }
 
+    onHtMessage() {
+        socket.on('privateMsg', (from, to, msg) => {
 
+            if (msg.user === this.state.username) {
+                let t = msg.time;
+                let time = t.slice(5);
+                let a = {
+                    'direction':"left",
+                    'leftContent': msg.message,
+                    'leftAvatar': msg.avatar,
+                    'time':time,
+                    'state':"1"
+                };
+                this.onMessage.push(a)
+                this.setState({
+                    onHTMessage:this.onMessage
+                })
+            }
+            else if (msg.user === this.state.LTUserNmane ) {
+                let t = msg.time;
+                let time = t.slice(5);
+                let b = {
+                    'direction':"right",
+                    'time':time,
+                    'rightContent': msg.message,
+                    'rightAvatar': msg.avatar,
+                    'state':"1"
+                };
+                this.onMessage.push(b)
+                this.setState({
+                    onHTMessage:this.onMessage
+                })
+
+            }
+            console.log(this.state.onHTMessage)
+
+            /*axios.post('/api/UserChatList',{
+                chatMessage:this.onMessage
+            })
+                .then((res)=>{
+                    console.log("1")
+                })
+                .catch((err)=>{
+                    console.log(err)
+                })*/
+
+
+        });
+
+    }
 
     SHBQ(){
         let bottom = document.querySelector("#LxKf-bottom");
@@ -294,7 +370,8 @@ class Child extends Component {
 
         })
     }
-    messageInfo(e){
+
+    messageInfo1(e){
         let value = e.target.value;
         if(value.length>0){
             this.setState({
@@ -310,12 +387,11 @@ class Child extends Component {
     EimitMessage(){
         let time = getNowTime();
 
-        io('http://localhost:3000')
-            .emit('privateMessage', this.state.username,this.state.LTUserNmane,{
-            username:this.state.username,
+        socket.emit('privateMessage', this.state.username,this.state.LTUserNmane,{
+            user:this.state.username,
             avatar:this.state.avatar,
             time:time,
-            messageInfo:this.state.messageInfo
+            message:this.state.messageInfo
         });
         this.setState({
             messageInfo:''
@@ -363,6 +439,17 @@ class Child extends Component {
 
     goBlack() {
         this.props.history.go("-1")
+    }
+
+    HideBottom(){
+        let bottom = document.querySelector("#LxKf-bottom");
+        bottom.style.bottom ="0px";
+        this.setState({
+            BottomFJ:true,
+            WXbq:true,
+            WXFj:false
+
+        })
     }
 }
 
